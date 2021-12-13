@@ -20,7 +20,6 @@ using (var scope = app.Services.CreateScope())
     await scope.ServiceProvider.GetService<ApplicationDbContext>()!.Database.EnsureCreatedAsync();
 }
 
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
